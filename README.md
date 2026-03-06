@@ -18,8 +18,15 @@
 * Conf_Production_11：2019 外发版
 * Conf_Production_12：2023 外发版
 * Conf_Production_12_Sherii：2023 外发版（新 12.1.0 分支专业版）
+* Conf_Production_PDF_11：金山 PDF 专业版 2019 外发版
+* Conf_Production_PDF_12：WPS PDF 专业版 2023 外发版
 
 内测版配置文件有详细参数说明，外发版没有。
+
+# 如何获取非定制版安装包
+在非定制版的 WPS 安装包的文件属性中，您可以看到其原始文件名以 "KPacket" 打头。
+
+可以使用 7-Zip 打开定制版安装包，将 `$_11_` 文件夹中的 $EXEFILE 提取出来，删除 $ 符号并添加 .exe 后缀名即可。
 
 # 关于参数加密编码
 
@@ -42,6 +49,14 @@
 * 2023 商业版 32 位：12.1.0.17150
 
 已知主程序和安装程序均可能会使用校验值对配置文件进行校验。
+
+# 关于配置参数的格式更新
+WPS Office 2023 从以下版本开始，金山办公对配置文件的参数格式进行了修改：
+
+*32 位：待补充（专业版已知从 12.1.0.23542 开始）
+*64 位：待补充（专业版已知从 12.1.0.23122 开始）
+
+因此请注意，旧版本的配置文件在新版本中已经不再可用。
 
 # 版权声明
 *"WPS", the WPS logo, "WPS+" and "WPS 365" are trademarks or registered trademarks of Kingsoft Corporation. Copyright (C) Kingsoft Corporation. All Rights Reserved.*
